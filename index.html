@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/fevicon/logo.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Campcrib Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="#">Tenant Portal</a>
+                    <div class="dropdown-content">
+                        <a href="#">Create Account</a>
+                        <a href="#">Login</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Landlord Portal</a>
+                    <div class="dropdown-content">
+                        <a href="#">Create Account</a>
+                        <a href="#">Login</a>
+                    </div>
+                </li>
+                <li><a href="#" class="search-icon" onclick="toggleSearchForm()">&#x1F50D;</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Welcome to <strong>Camp</strong><span class="h1-title">C</span>rib</h1>
+            <p>Your perfect solution for student accommodation. Find rooms that fit your budget and preferences, and connect with landlords easily.</p>
+            
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <h2>Affordable Rooms</h2>
+                            <p>Find rooms that fit your budget.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <h2>Convenient Locations</h2>
+                            <p>Choose from various prime locations.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <h2>Easy Booking</h2>
+                            <p>Book viewings and rooms with ease.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="prev" onclick="moveCarousel(-1)">&#10094;</a>
+                <a class="next" onclick="moveCarousel(1)">&#10095;</a>
+            </div>
+
+            <div class="portal-icons">
+                <a href="#" class="portal-icon"><img src="images/fevicon/tenant.png" alt="Student Portal">tenant</a>
+                <a href="#" class="portal-icon"><img src="images/fevicon/landlord.png" alt="Landlord Portal">landlord</a>
+            </div>
+        </div>
+     
+        <div class="image-container">
+            <img src="images/background.png" alt="Background Image">
+        </div>
+
+        <section id="search" class="hidden">
+            <div class="search-container">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                    
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location">
+                    
+                    <label for="budget">Budget:</label>
+                    <input type="number" id="budget" name="budget">
+                    
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Campcrib - All Rights Reserved
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
