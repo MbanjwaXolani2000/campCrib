@@ -17,7 +17,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .logo {
